@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="calculator card shadow">
+      <div class="card-header bg-primary text-white custom-width">
+        <div class="d-flex justify-content-between">
+          <span>Scientific Calculator</span>
+        </div>
+      </div>
+      <div class="card-body p-2">
+        <input type="text" class="form-control bg-light text-dark text-right p-2 mb-2 display" id="display" value="0">
+        <div class="buttons">
+          <div class="row m-0">
+            <button class="btn btn-danger col p-2 text-white" onclick="clearDisplay()" value="C">clear</button>
+            <button class="btn btn-info col p-2" onclick="back()">CE</button> 
+            <button class="btn btn-success col p-2 equal" onclick="equal()" value="=">=</button>
+          </div>
+          <div class="row m-0">
+            <button class="btn btn-secondary col p-2 text-white" onclick="sqrt()"><i class="fas fa-square-root-alt"></i></button>
+            <button class="btn btn-secondary col p-2 text-white" onclick="cube()">x<sup>3</sup></button>
+            <button class="btn btn-secondary col p-2 text-white" onclick="square()">x<sup>2</sup></button>
+            <button class="btn btn-secondary col p-2 text-white" onclick="pi()">π</button>
+            <button class="btn btn-secondary col p-2 text-white" onclick="factorial()">x!</button>
+          </div>
+          <div class="row m-0">
+            <button class="btn btn-light col p-2" onclick="Dic('7')" value="7">7</button>
+            <button class="btn btn-light col p-2" onclick="Dic('8')" value="8">8</button>
+            <button class="btn btn-light col p-2" onclick="Dic('9')" value="9">9</button>
+            <button class="btn btn-light col p-2 bg-warning" onclick="Dic('/')" value="/">/</button>
+            <button class="btn btn-secondary col p-2 text-white" onclick="log()">log</button>
+          </div>
+          <div class="row m-0">
+            <button class="btn btn-light col p-2" onclick="Dic('4')" value="4">4</button>
+            <button class="btn btn-light col p-2" onclick="Dic('5')" value="5">5</button>
+            <button class="btn btn-light col p-2" onclick="Dic('6')" value="6">6</button>
+            <button class="btn btn-light col p-2 bg-warning" onclick="Dic('*')" value="*">*</button>
+            <button class="btn btn-secondary col p-2 text-white" onclick="tan()">tan</button>
+          </div>
+          <div class="row m-0">
+            <button class="btn btn-light col p-2" onclick="Dic('1')" value="1">1</button>
+            <button class="btn btn-light col p-2" onclick="Dic('2')" value="2">2</button>
+            <button class="btn btn-light col p-2" onclick="Dic('3')" value="3">3</button>
+            <button class="btn btn-light col p-2 bg-warning" onclick="Dic('-')" value="-">-</button>
+            <button class="btn btn-secondary col p-2 text-white" onclick="cos()">cos</button>
+          </div>
+          <div class="row m-0">
+            <button class="btn btn-light col p-2" onclick="Dic('0')" value="0">0</button>
+            <button class="btn btn-light col p-2" onclick="Dic('.')" value=".">.</button>
+            <button class="btn btn-light col p-2 bg-warning" onclick="Dic('%')" value="%">%</button>
+            <button class="btn btn-light col p-2 bg-warning" onclick="Dic('+')" value="+">+</button>
+            <button class="btn btn-secondary col p-2 text-white" onclick="sin()">sin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer text-light py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="fs-5 reference mb-0">Design and Developed by <a href="https://www.youtube.com/@SamreenAqeel" target="_blank">Samreen Aqeel</a></p>  
+            </div>
+            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                <div class="social-icons">Follow Me:  
+                    <a href="https://www.instagram.com/samreen_aqeel3373/?hl=en" target="_blank" class="text-light me-2"><i class="fab fa-instagram fa-lg ml-2"></i></a>
+                    <a href="https://www.youtube.com/@SamreenAqeel" target="_blank" class="text-light me-2"><i class="fab fa-youtube fa-lg ml-2"></i></a>
+                    <a href="https://github.com/SamreenAqeel955" target="_blank" class="text-light"><i class="fab fa-github fa-lg ml-2"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61562637916019" target="_blank" class="text-light"><i class="fab fa-facebook fa-lg ml-2"></i></a>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
